@@ -59,6 +59,10 @@ h2 {
     font-size: 50px;
 }
 
+h3{
+    font-size: 20px
+}
+
 p {
     margin: 0;
     font-size: 30px;
@@ -67,6 +71,13 @@ p {
 
 svg:hover {
     fill: #f24d38;
+}
+
+.subtext {
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .hero-area {
@@ -149,4 +160,15 @@ svg:hover {
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
+}
+
+.project-image {
+    margin-top: 25px;
+    width: 250px;
+    border-radius: 125px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #f24d38;
 }
