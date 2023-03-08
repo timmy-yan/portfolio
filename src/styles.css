@@ -24,8 +24,13 @@ section {
 }
 
 footer {
-    height: 500px;
     background-color: #e3cfcc;
+    text-align: left;
+    padding: 80px;
+}
+
+.contact-me {
+    text-align: center;
 }
 
 nav {
@@ -171,4 +176,48 @@ svg:hover {
 .project-link {
     text-decoration: none;
     color: #f24d38;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.submission-form {
+    max-width: 500px;
+    margin: 2rem auto;
+    border: 2px solid;
+    border: 2px solid black;
+    padding: 3rem;
+    background-color: #FFFCF6;
+    border-radius: 30px;
+}
+
+label {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+#sendBtn {
+    border: 0;
+    padding: .5rem;
+    background: #f24d38;
+    margin-top: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+#sendBtn:hover {
+    background: #ef744b;
+}
+
+.textbox {
+    margin-bottom: 10px;
+    padding: 5px;
 }

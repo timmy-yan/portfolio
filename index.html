@@ -6,23 +6,23 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
         <title>Portfolio</title>
-        <menta charset="UTF-8" />
+        <meta charset="UTF-8" />
     </head>
     <body>
         <section id="hero" class="hero">
             <nav>
                 <img class="logo" src="src/images/logo.png" alt="Timmy Yan's logo"/>
                 <ul>
-                    <li>About me</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact-me">Contact</a></li>
                 </ul>
             </nav>
             <div class="hero-area">
                 <div class="hero-text">
                     <h1>Timmy Yan</h1>
                     <p>Software Engineer</p>
-                    <div id="about-me" class="button">About me</div>
+                    <div class="button"><a href="#about-me">About me</a></div>
                 </div>
                 <div id="socials" class="socials">
                     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/timmy-yan/" id="social" class="social">
@@ -65,7 +65,7 @@
                 </div>
             </div>
         </section>
-        <section id="sub-section" class="sub-section">
+        <section id="about-me" class="sub-section">
             <div class="information">
                 <h2>About Me</h2>
                 <p class="about-me">Hi, I'm Timmy, an aspiring web developer based in NYC. I graduated with a Bachelor of Science in Computer Science from Fordham University. After I graduated, I decided to attend Flatiron School to improve and specifically focus my web development skills further. Outside of coding, I have a strong passion for fashion, photography, making videos, and content creation.
@@ -75,7 +75,7 @@
                 <img class="timmy-yan" src="src/images/timmyyan.jpg" alt="Timmy Yan"/>
             </div>
         </section>
-        <section class="project-sub-section">
+        <section class="project-sub-section" id="projects">
             <h2>Projects</h2>
             <div class="project-container">
                 <div class="project-card">
@@ -108,7 +108,18 @@
                 </div>
             </div>
         </section>
-        <footer></footer>
+        <footer id="contact-me">
+            <h2 class="contact-me">Contact me</h2>
+            <form class="submission-form" action="https://formsubmit.co/timmy-yan@outlook.com" method="POST">
+                <input type="hidden" name="_subject" value="New email!">
+                <label for="email-address">Email</label>
+                <input class="textbox" type="email" name="email" placeholder="Email Address">
+                <input type="hidden" name="_next" value="https://timmyyan.com/pages/thankyou.html">
+                <label for="message">Message</label>
+                <input class="textbox" type="text" name="message" placeholder="Your Message" required>
+                <button id="sendBtn" type="submit">Send</button>
+            </form>
+        </footer>
         <script defer src="src/app.js"></script>
     </body>
 </html>
