@@ -5,6 +5,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ebdbccb72e.js" crossorigin="anonymous"></script>
         <title>Portfolio</title>
         <meta charset="UTF-8" />
     </head>
@@ -12,11 +13,14 @@
         <section id="hero" class="hero">
             <nav>
                 <img class="logo" src="src/images/logo.png" alt="Timmy Yan's logo"/>
-                <ul>
+                <ul id="nav-list">
                     <li><a href="#about-me">About me</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact-me">Contact</a></li>
                 </ul>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
             </nav>
             <div class="hero-area">
                 <div class="hero-text">
@@ -48,12 +52,6 @@
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <rect x="3" y="5" width="18" height="14" rx="4" />
                             <path d="M10 9l5 3l-5 3z" />
-                        </svg>
-                    </a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@timmy.yan?lang=en" id="social" class="social">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
                         </svg>
                     </a>
                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/timmy-yan" id="social" class="social">
